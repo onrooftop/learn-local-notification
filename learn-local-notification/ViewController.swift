@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private let notificationPublisher = NotificationPublisher()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func sendNotification(_ sender: UIButton) {
+        notificationPublisher.sendNotification(title: "First Notif", subtitle: "what a cool", body: "notification app! this is some really long text to add into the notification to see that it's look like", badge: 1, delayInterval: 10)
+    }
+    
 }
 

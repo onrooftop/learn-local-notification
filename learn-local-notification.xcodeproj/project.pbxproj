@@ -13,6 +13,7 @@
 		AEADD2D323DDDCCB0010A5D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEADD2D123DDDCCB0010A5D8 /* Main.storyboard */; };
 		AEADD2D523DDDCCF0010A5D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEADD2D423DDDCCF0010A5D8 /* Assets.xcassets */; };
 		AEADD2D823DDDCCF0010A5D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEADD2D623DDDCCF0010A5D8 /* LaunchScreen.storyboard */; };
+		AEADD2E023DDDE110010A5D8 /* NotificationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEADD2DF23DDDE110010A5D8 /* NotificationPublisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AEADD2D423DDDCCF0010A5D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEADD2D723DDDCCF0010A5D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEADD2D923DDDCCF0010A5D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEADD2DF23DDDE110010A5D8 /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				AEADD2CB23DDDCCB0010A5D8 /* AppDelegate.swift */,
+				AEADD2DF23DDDE110010A5D8 /* NotificationPublisher.swift */,
 				AEADD2CD23DDDCCB0010A5D8 /* SceneDelegate.swift */,
 				AEADD2CF23DDDCCB0010A5D8 /* ViewController.swift */,
 				AEADD2D123DDDCCB0010A5D8 /* Main.storyboard */,
@@ -141,6 +144,7 @@
 				AEADD2D023DDDCCB0010A5D8 /* ViewController.swift in Sources */,
 				AEADD2CC23DDDCCB0010A5D8 /* AppDelegate.swift in Sources */,
 				AEADD2CE23DDDCCB0010A5D8 /* SceneDelegate.swift in Sources */,
+				AEADD2E023DDDE110010A5D8 /* NotificationPublisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
