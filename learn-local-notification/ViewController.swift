@@ -18,7 +18,13 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sendNotification(_ sender: UIButton) {
-        notificationPublisher.sendNotification(title: "First Notif", subtitle: "what a cool", body: "notification app! this is some really long text to add into the notification to see that it's look like", badge: 1, delayInterval: 10)
+        notificationPublisher.sendNotification(title: "Wongnai", subtitle: "Connect People to Good Stuff", body: "This is my first iOS Sharing meeting", badge: 1, delayInterval: nil)
+        
+        notificationPublisher.sendNotification(title: "Wongnai (10s delay)", subtitle: "Connect People to Good Stuff", body: "This is my first iOS Sharing meeting", badge: 1, delayInterval: 10)
+        
+        //2
+        
+        //3
     }
     
 }

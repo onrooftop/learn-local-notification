@@ -7,27 +7,18 @@
 //
 
 import UIKit
-import UserNotifications
+//TODO: a-import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-    private func requestNotificationAuthorization(application: UIApplication) {
-        let center = UNUserNotificationCenter.current()
-        let option: UNAuthorizationOptions = [.alert, .badge, .sound]
-        
-        center.requestAuthorization(options: option) { granted, error in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-        }
-    }
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        requestNotificationAuthorization(application: application)
+        //TODO: 1-create center
+
+        //TODO: 2-create option
+
+        //TODO: 3-center request authorization
         
         return true
     }

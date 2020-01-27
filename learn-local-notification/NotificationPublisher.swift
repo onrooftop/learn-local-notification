@@ -7,61 +7,38 @@
 //
 
 import UIKit
-import UserNotifications
+//TODO: b-import UserNotifications
 
 class NotificationPublisher: NSObject {
     func sendNotification(title: String, subtitle: String, body: String, badge: Int?, delayInterval: Int?) {
-        let notificationContent = UNMutableNotificationContent()
-        notificationContent.title = title
-        notificationContent.subtitle = subtitle
-        notificationContent.body = body
         
-        var delayTimeTrigger: UNTimeIntervalNotificationTrigger?
+        //TODO: 4-create notification content
+
+        //TODO: 5-set title
+
+        //TODO: 6-set subtitle
+
+        //TODO: 7-set body
+
+        //TODO: 8-set badge
+
+        //TODO: 9-set sound
         
-        if let delayInterval = delayInterval {
-            delayTimeTrigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(delayInterval), repeats: false)
-        }
+        //TODO: 10-create time interval notification trigger
+
+        //TODO: 11-set delegate
+ 
+        //TODO: 12-create request
         
-        if let badge = badge {
-            var currentBadgeCount = UIApplication.shared.applicationIconBadgeNumber
-            currentBadgeCount += badge
-            notificationContent.badge = NSNumber(integerLiteral: currentBadgeCount)
-        }
-        
-        notificationContent.sound = UNNotificationSound.default
-        
-        UNUserNotificationCenter.current().delegate = self
-        
-        let request = UNNotificationRequest(identifier: "TestLocalNotification", content: notificationContent, trigger: delayTimeTrigger)
-        
-        UNUserNotificationCenter.current().add(request) { error in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-        }
+        //TODO: 13-add request to center
+
     }
 }
 
 
 extension NotificationPublisher: UNUserNotificationCenterDelegate {
-    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        print("The notification is about to be presented")
-        completionHandler([.badge, .sound, .alert])
-    }
+    //TODO: 14-will present
     
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        let identifier = response.actionIdentifier
-        
-        switch identifier {
-        case UNNotificationDismissActionIdentifier:
-            print("the notification was dismissed")
-            completionHandler()
-        case UNNotificationDefaultActionIdentifier:
-            print("opened the app from the notification")
-            completionHandler()
-        default:
-            print("default case was called")
-        }
-    }
+    //TODO: 15-did receive
+    
 }
